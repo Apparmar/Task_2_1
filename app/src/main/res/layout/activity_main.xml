@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CBFFEB3B"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <Spinner
@@ -12,10 +12,8 @@
         android:layout_width="315dp"
         android:layout_height="53dp"
         android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:background="#FFFFFF"
+        android:background="#B1ACAC"
         android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -25,22 +23,20 @@
         android:layout_width="137dp"
         android:layout_height="35dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="8dp"
-        android:background="#D3371D"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
         android:text="Source Unit"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="193dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="42dp"
-        android:background="#D3371D"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
         android:text="Destination Unit"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,76 +47,73 @@
         android:layout_width="315dp"
         android:layout_height="68dp"
         android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:background="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:background="#B1ACAC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="270dp"
-        android:layout_height="77dp"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="48dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:background="#DCD9D9"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:shadowColor="#DCD9D9"
         android:text="TextView"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        app:layout_constraintTop_toBottomOf="@+id/mtView" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="32dp"
         android:text="Convert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mtView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/mtView"
         android:layout_width="268dp"
         android:layout_height="55dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="48dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="36dp"
+        android:background="#DCD9D9"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        android:paddingLeft="10dp"
+        android:shadowColor="#B1ACAC"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="131dp"
         android:layout_height="38dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
         android:autoText="false"
-        android:background="#D3371D"
+        android:background="#FFFFFF"
         android:elegantTextHeight="true"
         android:text="Type"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="14dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="317dp"
         android:layout_height="55dp"
         android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:background="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        android:layout_marginTop="4dp"
+        android:background="#B1ACAC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
